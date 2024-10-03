@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="primary-heading">Library</h1>
+      </div>
+    </header>
+    <div class="container">
+      <main>
+        <button class="btn btn--primary btn--add-book">
+          <i class="ph-bold ph-plus"></i>Book
+        </button>
+
+        <section class="library">
+          <!-- <article class="book completed">
+            <picture class="book__img-box">
+              <img
+                src="https://eloquentjavascript.net/img/cover.jpg"
+                alt="Eloquent JavaScript cover"
+                class="book__img"
+              />
+            </picture>
+            <h1 class="book__title">Eloquent JavaScript</h1>
+            <h2 class="book__author">Marijn Haverbeke</h2>
+            <div class="book__controls">
+              <i class="ph-bold ph-check"></i><i class="ph-bold ph-eye"></i>
+            </div>
+          </article> -->
+        </section>
+      </main>
+    </div>
+
+    <dialog class="dialog dialog--add-book">
+      <h1>Add book</h1>
+      <form method="dialog" class="form form--add-book" action="">
+        <div class="form__row form__row--half">
+          <label class="form__label" for="title">Title *</label>
+          <input
+            class="form__input"
+            type="text"
+            name="title"
+            id="title"
+            required
+          />
+          <p class="error hidden">Title must be filled</p>
+        </div>
+        <div class="form__row form__row--half">
+          <label class="form__label" for="author">Author *</label>
+          <input
+            class="form__input"
+            type="text"
+            name="author"
+            id="author"
+            required
+          />
+          <p class="error hidden">Author must be filled</p>
+        </div>
+        <div class="form__row form__row--half">
+          <label class="form__label" for="year">Year</label>
+          <input
+            class="form__input"
+            type="number"
+            name="year"
+            id="year"
+            min="1800"
+            max="2024"
+          />
+        </div>
+        <div class="form__row form__row--half">
+          <label class="form__label" for="year">Status</label>
+          <select class="form__input" name="status" id="status" required>
+            <option value="to-read" selected>To-read</option>
+            <option value="in-progress">In-progress</option>
+            <option value="finished">Finished</option>
+          </select>
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="coverUrl">Cover URL</label>
+          <input
+            class="form__input"
+            type="text"
+            name="coverUrl"
+            id="coverUrl"
+          />
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="review">Review</label>
+          <textarea class="form__input" name="review" id="review"></textarea>
+        </div>
+        <button class="btn btn--cancel" type="button">Cancel</button>
+        <button class="btn btn--submit" type="submit">Add book</button>
+      </form>
+    </dialog>
+
+    <dialog class="dialog dialog--book-detail">
+      <!-- <h1>Book details</h1>
+      <article class="book-detail">
+        <picture class="book-detail__img">
+          <img
+            src="https://eloquentjavascript.net/img/cover.jpg"
+            alt="Eloquent JavaScript"
+          />
+        </picture>
+        <section>
+          <dl class="book-detail__info">
+            <dt>Title</dt>
+            <dd>Eloquent JavaScript</dd>
+            <dt>Author</dt>
+            <dd>Marijn Haverbee</dd>
+            <dt>Year</dt>
+            <dd>2024</dd>
+            <dt>Status</dt>
+            <dd>Completed</dd>
+            <dt>Review</dt>
+            <dd>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus deleniti id consequatur suscipit deserunt eligendi
+              aliquam dolorem voluptate delectus at ab iure quo, architecto
+              eveniet voluptatibus dolores neque nemo sed temporibus nam
+              accusantium, illo, optio harum impedit! Cum, error deleniti!
+            </dd>
+          </dl>
+        </section>
+      </article> -->
+    </dialog>
+  </body>
+</html>

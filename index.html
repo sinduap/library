@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="images/books.png" type="image/png" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
@@ -17,7 +18,9 @@
   <body>
     <header>
       <div class="container">
-        <h1 class="primary-heading">Library</h1>
+        <h1 class="primary-heading">
+          <img class="logo" src="images/books.png" alt="Logo" />Library
+        </h1>
       </div>
     </header>
     <div class="container">
@@ -85,7 +88,6 @@
           <label class="form__label" for="year">Status</label>
           <select class="form__input" name="status" id="status" required>
             <option value="to-read" selected>To-read</option>
-            <option value="in-progress">In-progress</option>
             <option value="finished">Finished</option>
           </select>
         </div>

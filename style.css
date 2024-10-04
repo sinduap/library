@@ -47,6 +47,11 @@ header {
   margin-block-end: 20px;
 }
 
+.logo {
+  height: 24px;
+  margin-inline-end: 4px;
+}
+
 .primary-heading {
   color: var(--light);
 }
@@ -221,7 +226,7 @@ textarea.form__input {
 }
 
 .book__controls i:hover {
-  color: var(--yellow);
+  color: var(--accent);
 }
 
 .book-detail {
